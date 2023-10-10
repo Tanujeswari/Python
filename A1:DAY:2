@@ -1,0 +1,3 @@
+n=int(input())
+minutes=n*60
+print(minutes)
