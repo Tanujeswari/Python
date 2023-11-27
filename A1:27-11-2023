@@ -1,0 +1,18 @@
+n=int(input())
+A=[]
+for i in range(0,n):
+    l=list(map(int,input().split()))
+    A.append(l)
+pri_diag=0
+for i in range(0,n):
+    for j in range(0,n):
+        if(i==j):
+            pri_diag=pri_diag+A[i][j]
+second_diag=0
+for i in range(0,n):
+    for j in range(0,n):
+        if(i+j==n-1):
+            second_diag=second_diag+A[i][j]
+print(abs(pri_diag-second_diag))
+
+
