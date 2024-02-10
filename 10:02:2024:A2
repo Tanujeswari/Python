@@ -1,0 +1,12 @@
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        s={}
+        for k in nums:
+            if k not in s:
+                s[k]=1
+            else:
+                s[k]=s[k]+1
+        for k in s:
+            if s[k]==1:
+                return k
+        
